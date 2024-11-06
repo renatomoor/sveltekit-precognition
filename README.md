@@ -6,38 +6,36 @@ This is a simple example of how to use Laravel as a backend and SvelteKit as a f
 
 1. Clone the repository
  ```bash
-    git clone git@github.com:renatomoor/sveltekit-precognition.git
+git clone --recurse-submodules git@github.com:renatomoor/sveltekit-precognition.git
 ```
 
-2. Create a `.env` file
+2. Install the dependencies
 ```bash
-    cp .env.example .env
+cd sveltekit-precognition
+composer install
 ```
 
-3. Install the dependencies
+3. Create a `.env` file
 ```bash
-    cd sveltekit-precognition
-    composer install
-    cd frontend && pnpm install
+cp .env.example .env
 ```
 
 4. Generate the application key
 ```bash
-    # go back to the root of the project and run
-    php artisan key:generate
+php artisan key:generate
 ```
 
 5. Run the migrations
 ```bash
-    php artisan migrate
+php artisan migrate
 ```
 
 6. Run the development servers
 ```bash
-    composer dev
+composer dev
 ```
 
 7. Access the frontend application
 ```bash
-    http://localhost:5173/
+http://localhost:5173/
 ```
