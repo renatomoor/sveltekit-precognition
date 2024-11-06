@@ -58,7 +58,7 @@
         >
             <div class="grid gap-2 border border-rounded border-gray-200 p-3 rounded-xl">
                 <Form.InputField
-                    bind:value={form.data.name}
+                    bind:value={form.name}
                     error={form.errors.name}
                     label="Name"
                     name="name"
@@ -86,7 +86,7 @@
 
 
             <Form.InputField
-                bind:value={form.data.email}
+                bind:value={form.email}
                 error={form.errors.email}
                 label="Email"
                 on:change={() => form.validate('email')}
@@ -96,7 +96,7 @@
             />
 
             <Form.InputField
-                bind:value={form.data.password}
+                bind:value={form.password}
                 error={form.errors.password}
                 label="Password"
                 placeholder="Password"
@@ -105,7 +105,7 @@
             />
 
             <Form.InputField
-                bind:value={form.data.password_confirmation}
+                bind:value={form.password_confirmation}
                 error={form.errors.password_confirmation}
                 label="Confirm Password"
                 on:change={() => form.validate('password_confirmation') && form.validate('password')}
