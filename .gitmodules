@@ -1,0 +1,3 @@
+[submodule "frontend/src/lib/precognition"]
+	path = frontend/src/lib/precognition
+	url = https://github.com/renatomoor/precognition
