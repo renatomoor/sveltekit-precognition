@@ -35,7 +35,5 @@ php artisan migrate
 composer dev
 ```
 
-7. Access the frontend application
-```bash
+7. Access the frontend application  
 http://localhost:5173/
-```
